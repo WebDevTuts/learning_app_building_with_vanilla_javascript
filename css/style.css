@@ -230,13 +230,19 @@ em {
 }
 
 .nav .nav-elements .forecast .results {
-    display: none;
+    /* display: none; */
+    height: auto;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height .3s ease-out;
   }
 
 .nav .nav-elements .forecast .open {
-    display: block;
+    /* display: block; */
     border: 1px solid white;
     border-top: none;
+    overflow-y: auto;
+    max-height: 400px;
 }
 
 .nav .nav-elements .forecast .results .options {
@@ -286,8 +292,8 @@ em {
 }
 
 .nav .nav-elements .forecast .results .activities {
-    max-height: 125px;
-    overflow: scroll;
+    /* max-height: 125px; */
+    /* overflow: scroll; */
 }
 
 .nav .nav-elements .forecast .results .activities ul {
