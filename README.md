@@ -14,3 +14,5 @@ Topics include:
 - Transpiling vanilla JavaScript for cross-browser compatibility
 
 Credit of this project goes to Lynda.com course with same name as title.
+
+[View demo site here.](https://webdevtuts.github.io/learning_app_building_with_vanilla_javascript/)
