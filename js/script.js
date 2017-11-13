@@ -2,7 +2,7 @@
 
 (function() {
 	const url = "http://api.openweathermap.org/data/2.5/weather?q=";
-	const apiKey = "APIKEY"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+	const apiKey = "a777048f04bd2f2d98e47d37f662e0fe";
 	const activities = {
 		teamIn: ['basketball','hockey','volleyball'],
 		teamOutWarm: ['softball/baseball','football/soccer','American football','rowing','tennis','volleyball','ultimate frisbee','rugby'],
@@ -60,7 +60,7 @@
 		updateActivityList();
 	}
 
-	// handle selection of a new category (team/solo/all) 
+	// handle selection of a new category (team/solo/all)
 	function updateActivityList(event) {
 		if (event !== undefined && $(this).hasClass('selected')) {
 			// if the 'event' parameter is defined, then a tab has been clicked; if not, then this is the
@@ -75,7 +75,7 @@
 			category = $(this).attr('id');
 			$('.options div').removeClass('selected');
 			$(this).addClass('selected');
-		} 
+		}
 
 		state.activities = [];
 		if (state.condition === "Rain") {
